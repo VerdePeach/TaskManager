@@ -1,0 +1,127 @@
+
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JButton;
+import javax.swing.JTable;
+import javax.swing.SwingConstants;
+import javax.swing.table.DefaultTableModel;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+
+/**
+ * Class that creates calendar and puts signs "$" if  that date has task.
+ */
+public class SwingCalendar extends JFrame {
+
+    private DefaultTableModel model;
+    private Calendar cal = new GregorianCalendar();
+    private JLabel label;
+    private LinkedTaskList linkedTaskList;
+
+    /**
+     * Constructor creates calendar
+     * @param linkedTaskList
+     */
+    SwingCalendar(LinkedTaskList linkedTaskList) {
+        this.linkedTaskList = linkedTaskList;
+
+        this.setTitle("Calendar");
+        this.setBounds(600 ,400,300,200);
+        this.setLayout(new BorderLayout());
+        this.setVisible(true);
+
+
+        label = new JLabel();
+        label.setHorizontalAlignment(SwingConstants.CENTER);
+
+        JButton b1 = new JButton("<");
+        b1.setBackground(Color.ORANGE);
+        b1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                cal.add(Calendar.MONTH, -1);
+                updateMonth();
+            }
+        });
+
+        JButton b2 = new JButton(">");
+        b2.setBackground(Color.ORANGE);
+        b2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                cal.add(Calendar.MONTH, +1);
+                updateMonth();
+            }
+        });
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new BorderLayout());
+        panel.add(b1,BorderLayout.WEST);
+        panel.add(label,BorderLayout.CENTER);
+        panel.add(b2,BorderLayout.EAST);
+
+
+        String [] columns = {"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};
+        model = new DefaultTableModel(null,columns);
+        JTable table = new JTable(model);
+        JScrollPane pane = new JScrollPane(table);
+
+        this.add(panel,BorderLayout.NORTH);
+        this.add(pane,BorderLayout.CENTER);
+
+        this.updateMonth();
+
+    }
+
+    /**
+     * Method that update content in the calendar.
+     */
+    private void updateMonth() {
+        cal.set(Calendar.DAY_OF_MONTH, 1);
+
+        String month = cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.US);
+        int year = cal.get(Calendar.YEAR);
+        label.setText(month + " " + year);
+
+        int startDay = cal.get(Calendar.DAY_OF_WEEK);
+        int numberOfDays = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+        int weeks = cal.getActualMaximum(Calendar.WEEK_OF_MONTH);
+
+        model.setRowCount(0);
+        model.setRowCount(weeks + 1);
+
+        int i = startDay-1;
+
+
+        int yearTask = 0;
+        String monthTask = "";
+        int dayTask = 0;
+
+        for (int day = 1; day <= numberOfDays; day++) {
+            for (Task task: linkedTaskList) {
+                yearTask = task.getYear();
+                monthTask = task.getMonth();
+                dayTask = task.getDay();
+                if (year == yearTask && month.equals(monthTask) && day == dayTask) {
+                    model.setValueAt(day + " $", i / 7, i % 7);
+                } else {
+                    if (model.getValueAt(i / 7, i % 7) == null
+                            || !model.getValueAt(i / 7, i % 7).equals(day + " $"))
+                        model.setValueAt(day, i / 7, i % 7);
+                }
+                yearTask = 0;
+                monthTask = "";
+                dayTask = 0;
+            }
+            i = i + 1;
+        }
+
+    }
+
+}
+
