@@ -105,7 +105,7 @@ abstract class TaskList implements Iterable<Task>, Cloneable, Serializable {
                 TaskList.this.remove(helpTask);
                 index--;
             } else {
-                logger.error("Illegal state exception");
+                logger.error("Impossible to remove task. Task with such index dose not exist");
                 throw new IllegalStateException();
             }
             
