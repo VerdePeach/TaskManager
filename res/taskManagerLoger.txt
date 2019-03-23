@@ -40,3 +40,7 @@
 2019-03-23 17:55:58 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
 2019-03-23 17:56:04 ERROR View:124 - The task for removing did not choose.
 2019-03-23 17:56:35 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 20:52:07 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 20:52:21 ERROR ViewAdd:134 - Incorrect start date format.
+2019-03-23 20:52:22 ERROR ViewAdd:148 - Incorrect end date format.
+2019-03-23 20:52:22 ERROR ViewAdd:164 - Incorrect data for the task.
