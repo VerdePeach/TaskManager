@@ -1,3 +1,5 @@
+package com.vlad;
+
 import com.sbix.jnotify.NPosition;
 import com.sbix.jnotify.NoticeType;
 import com.sbix.jnotify.NoticeWindow;
@@ -6,7 +8,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * Class output notification about Tasks on defined interval.
+ * Class output notification about com.vlad.Tasks on defined interval.
  */
 public class Notification {
     /**

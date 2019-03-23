@@ -1,3 +1,4 @@
+package com.vlad;
 
 import org.apache.log4j.Logger;
 import java.util.Date;
@@ -18,7 +19,7 @@ public class Tasks {
      * @param tasks list of task for searching
      * @param from time when to start.
      * @param to time when to finish.
-     * @return Iterable<Task>
+     * @return Iterable<com.vlad.Task>
      */
     public static Iterable<Task> incoming(Iterable<Task> tasks, Date from, Date to) {
         if (from.getTime() < 0) {
@@ -59,7 +60,7 @@ public class Tasks {
      * @param tasks list of task for searching
      * @param from time when to start.
      * @param to time when to finish.
-     * @return SortedMap<Date, Set<Task>>
+     * @return SortedMap<Date, Set<com.vlad.Task>>
      */
     public static SortedMap<Date, Set<Task>> calendar(Iterable<Task> tasks, Date from, Date to) {
         HashSet<Task> mySet = new HashSet<>();

@@ -1,3 +1,5 @@
+package com.vlad;
+
 import org.apache.log4j.Logger;
 
 import javax.swing.JFrame;
@@ -9,8 +11,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 /**
- * Public class DetailView that extends class JFrame.
- * It creates the window with full, detail information about Tasks.
+ * Public class com.vlad.DetailView that extends class JFrame.
+ * It creates the window with full, detail information about com.vlad.Tasks.
  */
 public class DetailView extends JFrame {
 
@@ -39,7 +41,7 @@ public class DetailView extends JFrame {
         setContentPane(panel);
 
         setVisible(true);
-        logger.info("Window DetailView successfully created");
+        logger.info("Window com.vlad.DetailView successfully created");
     }
 
     /**

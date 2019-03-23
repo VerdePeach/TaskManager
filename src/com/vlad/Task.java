@@ -1,3 +1,4 @@
+package com.vlad;
 
 import org.apache.log4j.Logger;
 
@@ -7,7 +8,7 @@ import java.io.Serializable;
 import java.util.Locale;
 
 /**
- * Class Task, where tasks is created.
+ * Class com.vlad.Task, where tasks is created.
  */
 public class Task implements Cloneable, Serializable {
 
@@ -383,12 +384,7 @@ public class Task implements Cloneable, Serializable {
         SimpleDateFormat newDate = new SimpleDateFormat("dd");
         return Integer.valueOf(newDate.format(getTime()));
     }
-/*
-    public Date getStepTime(Date stepDate){
-        stepDate = new Date(stepDate.getTime() + interval);
-      return stepDate;
-    }
-*/
+
 }
 
 

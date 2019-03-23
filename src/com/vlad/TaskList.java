@@ -1,3 +1,4 @@
+package com.vlad;
 
 import org.apache.log4j.Logger;
 
@@ -60,7 +61,7 @@ abstract class TaskList implements Iterable<Task>, Cloneable, Serializable {
     }
 
     /**
-     * Private class myListIterator that implements Iterator<Task> and override methods.
+     * Private class myListIterator that implements Iterator<com.vlad.Task> and override methods.
      */
     private class myListIterator implements Iterator<Task> {
         

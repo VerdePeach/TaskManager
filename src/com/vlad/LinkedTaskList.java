@@ -1,7 +1,9 @@
+package com.vlad;
+
 import org.apache.log4j.Logger;
 
 /**
-* Public class that extends abstract class TaskList.
+* Public class that extends abstract class com.vlad.TaskList.
 * In this class created List that contains tasks.
 */
 public class LinkedTaskList extends TaskList implements Cloneable {
@@ -12,14 +14,14 @@ public class LinkedTaskList extends TaskList implements Cloneable {
     private int counter = 0;
     
     /**
-    * Method that adds element to LinkedTaskList.
+    * Method that adds element to com.vlad.LinkedTaskList.
     * @param task that is adding to list.
     */
     @Override
     public void add(Task task) {
         if (task == null) {
             logger.error("An attempt to add empty task.");
-            throw new NullPointerException("Task is empty");
+            throw new NullPointerException("com.vlad.Task is empty");
         } else {
             LinkNode help = new LinkNode(task, first, last); 
             first.prev = help;
@@ -119,15 +121,15 @@ public class LinkedTaskList extends TaskList implements Cloneable {
 
     /**
      * Method return name of class
-     * @return "Linked Task List "
+     * @return "Linked com.vlad.Task List "
      */
     @Override
     public String listName() {
-        return "Linked Task List ";
+        return "Linked com.vlad.Task List ";
     }
 
     /**
-     * Method output Tasks list.
+     * Method output com.vlad.Tasks list.
      * That included index and name
      * @return ""
      */
@@ -137,7 +139,7 @@ public class LinkedTaskList extends TaskList implements Cloneable {
             return "";
         LinkNode help = first.next;
         int i = 0;
-        System.out.println("Tasks of List: ");
+        System.out.println("com.vlad.Tasks of List: ");
         while (help.task != null) {
         System.out.println("Index is " + i + ". Name is "
         + help.task.getTitle());

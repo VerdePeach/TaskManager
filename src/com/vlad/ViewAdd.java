@@ -1,3 +1,5 @@
+package com.vlad;
+
 import org.apache.log4j.Logger;
 import javax.swing.JPanel;
 import javax.swing.JButton;
@@ -17,7 +19,7 @@ import java.util.Date;
 
 /**
  * Public class contains window where customer can add new task.
- * class ViewAdd extends JFrame
+ * class com.vlad.ViewAdd extends JFrame
  */
 public class ViewAdd extends JFrame {
 
@@ -153,9 +155,9 @@ public class ViewAdd extends JFrame {
                     System.out.println("interval before adding " + interval);
                     Task newTask = new Task(title, start, end, interval * 60);
                     newTask.setActive(active);
-                    TaskIO inputTasks = new TaskIO();
+
                     linkedTaskList.add(newTask);
-                    inputTasks.writeText(linkedTaskList, new File("file.txt"));
+                    TaskIO.writeText(linkedTaskList, new File("file.txt"));
                     JOptionPane.showMessageDialog(null, "Successfully added");
                     dispose();
                 } else {
@@ -195,10 +197,10 @@ public class ViewAdd extends JFrame {
                     Task newTask = new Task(title, time);
                     newTask.setActive(active);
 
-                    TaskIO inputTasks = new TaskIO();
+
                     LinkedTaskList helpList = linkedTaskList;
                     helpList.add(newTask);
-                    inputTasks.writeText(helpList, new File("file.txt"));
+                    TaskIO.writeText(helpList, new File("file.txt"));
                     JOptionPane.showMessageDialog(null, "Successfully added");
                     dispose();
                 } else {

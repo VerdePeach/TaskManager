@@ -1,3 +1,4 @@
+package com.vlad;
 
 import org.apache.log4j.Logger;
 
@@ -408,6 +409,7 @@ public class TaskIO {
             logger.error(e);
         }
     }
+
     /**
      * Static method that creates File if it is not exists.
      */

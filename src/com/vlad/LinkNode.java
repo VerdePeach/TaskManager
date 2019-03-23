@@ -1,6 +1,7 @@
+package com.vlad;
 
 /**
-*public class that makes nodes for LinkedTaskList
+*public class that makes nodes for com.vlad.LinkedTaskList
 */
 public class LinkNode implements  Cloneable {
 

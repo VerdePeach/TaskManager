@@ -1,3 +1,5 @@
+package com.vlad;
+
 import org.apache.log4j.Logger;
 
 import javax.swing.JOptionPane;
@@ -18,7 +20,7 @@ import java.util.Date;
 
 /**
  * Class contains window that display full information about tasks.
- * class ViewEdit extends JFrame.
+ * class com.vlad.ViewEdit extends JFrame.
  */
 public class ViewEdit extends JFrame {
 
@@ -128,8 +130,7 @@ public class ViewEdit extends JFrame {
                 System.out.println(activeCheck.isSelected());
 
                 if (title.length() > 0 && time.after(new Date())) {
-                    TaskIO inputTasks = new TaskIO();
-                    inputTasks.writeText(linkedTaskList, new File("file.txt"));
+                    TaskIO.writeText(linkedTaskList, new File("file.txt"));
                     JOptionPane.showMessageDialog(null, "Successfully edited");
                 } else {
                     logger.error("Incorrect data for the task");
@@ -205,11 +206,10 @@ public class ViewEdit extends JFrame {
                 } else if (title.length() > 0 && ((!start.equals(new Date(0)) && !end.equals(new Date(0))))){
 
                     linkedTaskList.getTask(index).setTime(start, end, interval*60);
-                    TaskIO inputTasks = new TaskIO();
-                    inputTasks.writeText(linkedTaskList, new File("file.txt"));
+                    TaskIO.writeText(linkedTaskList, new File("file.txt"));
                     JOptionPane.showMessageDialog(null, "Successfully edited");
                 } else {
-                    logger.error("Incorrect  data for the task.");
+                    logger.error("Incorrect data for the task.");
                     JOptionPane.showMessageDialog(null, "Incorrect data");
                 }
             }

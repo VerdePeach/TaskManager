@@ -1,3 +1,5 @@
+package com.vlad;
+
 import org.apache.log4j.Logger;
 
 /**
@@ -12,7 +14,7 @@ public class ArrayTaskList extends TaskList implements  Cloneable {
     private int i = 0;
 
     /**
-    * Method that add element to ArrayTaskList.
+    * Method that add element to com.vlad.ArrayTaskList.
     * @param task that is adding to list.
     */
     @Override
@@ -92,15 +94,15 @@ public class ArrayTaskList extends TaskList implements  Cloneable {
 
     /**
      * Method return name of class
-     * @return "Array Task List "
+     * @return "Array com.vlad.Task List "
      */
     @Override
     public String listName() {
-        return "Array Task List ";
+        return "Array com.vlad.Task List ";
     }
 
     /**
-     * Method output Tasks list.
+     * Method output com.vlad.Tasks list.
      * That included index and name
      * @return ""
      */
@@ -108,7 +110,7 @@ public class ArrayTaskList extends TaskList implements  Cloneable {
     public String getAllList() {
         if (size() == 0)
             return "";
-        System.out.println("Tasks List: ");
+        System.out.println("com.vlad.Tasks List: ");
             for (int i = 0; i < size(); i++) {
                 System.out.println("Index is " + i + ". Name of the task is "
                 + myArrayTasks[i].getTitle());
@@ -117,7 +119,7 @@ public class ArrayTaskList extends TaskList implements  Cloneable {
     }
 
     /**
-     * Method makes a clone of the ArrayTaskList.
+     * Method makes a clone of the com.vlad.ArrayTaskList.
      * @throws CloneNotSupportedException
      * @return coned arrayTaskList
      */

@@ -1,9 +1,10 @@
+package com.vlad;
 
 import java.io.File;
 
 /**
-* Class TestTask, public class where created main method.
-* Class created for testing class Task. 
+* Class com.vlad.TestTask, public class where created main method.
+* Class created for testing class com.vlad.Task.
 */
 public class TestTask {
 
@@ -15,8 +16,7 @@ public class TestTask {
     public static void main(String[] args) {
         TaskIO.createFile();
         LinkedTaskList myLinklist = new  LinkedTaskList();
-        TaskIO inputTasks = new TaskIO();
-        inputTasks.readText(myLinklist, new File("file.txt"));
+        TaskIO.readText(myLinklist, new File("file.txt"));
         new Notification(myLinklist);
         new View(myLinklist);
     }

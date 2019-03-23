@@ -1,3 +1,4 @@
+package com.vlad;
 
 import org.apache.log4j.Logger;
 
@@ -17,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  * Public class that contains main window of the programme.
- * class View extends JFrame
+ * class com.vlad.View extends JFrame
  */
 public class View extends JFrame {
 
@@ -120,7 +121,7 @@ public class View extends JFrame {
                     }
                     new ViewRemove(taskList.getSelectedIndex(), myNewList);
                 } catch (Exception ex) {
-                    logger.error("A task for removing did not choose.");
+                    logger.error("The task for removing did not choose.");
                     JOptionPane.showMessageDialog(null, "Task didn`t choose");
                 }
             }

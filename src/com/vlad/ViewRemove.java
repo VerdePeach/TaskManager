@@ -1,3 +1,5 @@
+package com.vlad;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -11,7 +13,7 @@ import java.io.File;
 
 /**
  * Public class that responsible for removing the task from the sheet.
- * class ViewRemove extends JFrame.
+ * class com.vlad.ViewRemove extends JFrame.
  */
 public class ViewRemove extends JFrame {
 
@@ -50,8 +52,8 @@ public class ViewRemove extends JFrame {
                 Task delTask = linkedTaskList.getTask(index);
                 linkedTaskList.remove(linkedTaskList.getTask(index));
 
-                TaskIO taskIO = new TaskIO();
-                taskIO.writeText(linkedTaskList, new File("file.txt"));
+
+                TaskIO.writeText(linkedTaskList, new File("file.txt"));
                 JOptionPane.showMessageDialog(null,"Task removed successfully");
                 dispose();
             }

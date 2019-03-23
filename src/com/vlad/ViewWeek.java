@@ -1,3 +1,5 @@
+package com.vlad;
+
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import javax.swing.JList;
@@ -10,7 +12,7 @@ import java.util.Date;
 
 /**
  * Public class contains window that display information about task for next 7 days.
- * class ViewWeek extends JFrame
+ * class com.vlad.ViewWeek extends JFrame
  */
 public class ViewWeek extends JFrame {
 

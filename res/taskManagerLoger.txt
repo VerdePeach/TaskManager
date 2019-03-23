@@ -1,13 +1,42 @@
 
-2019-03-10 10:46:46 INFO  DetailView:42 - Window DetailView successfully created
-2019-03-10 10:46:48 INFO  DetailView:42 - Window DetailView successfully created
-2019-03-10 11:16:45 ERROR LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
-2019-03-10 11:20:58 INFO  DetailView:42 - Window DetailView successfully created
-2019-03-10 11:21:15 ERROR LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
-2019-03-10 12:07:12 ERROR View:115 - A task for removing did not choose.
-2019-03-10 12:07:16 ERROR LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
-2019-03-10 13:35:03 ERROR View:115 - A task for removing did not choose.
-2019-03-10 13:35:14 ERROR LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
-2019-03-10 15:13:17 ERROR LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
-2019-03-10 15:15:04 ERROR LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
-2019-03-10 15:15:49 INFO  DetailView:42 - Window DetailView successfully created
+2019-03-10 10:46:46 INFO  com.vlad.DetailView:42 - Window com.vlad.DetailView successfully created
+2019-03-10 10:46:48 INFO  com.vlad.DetailView:42 - Window com.vlad.DetailView successfully created
+2019-03-10 11:16:45 ERROR com.vlad.LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-10 11:20:58 INFO  com.vlad.DetailView:42 - Window com.vlad.DetailView successfully created
+2019-03-10 11:21:15 ERROR com.vlad.LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-10 12:07:12 ERROR com.vlad.View:115 - A task for removing did not choose.
+2019-03-10 12:07:16 ERROR com.vlad.LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-10 13:35:03 ERROR com.vlad.View:115 - A task for removing did not choose.
+2019-03-10 13:35:14 ERROR com.vlad.LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-10 15:13:17 ERROR com.vlad.LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-10 15:15:04 ERROR com.vlad.LinkedTaskList:78 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-10 15:15:49 INFO  com.vlad.DetailView:42 - Window com.vlad.DetailView successfully created
+2019-03-23 17:25:39 ERROR com.vlad.View:123 - A task for removing did not choose.
+2019-03-23 17:42:19 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:42:35 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:42:37 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
+2019-03-23 17:48:02 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
+2019-03-23 17:49:34 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:49:36 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:49:41 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:49:45 ERROR ViewAdd:134 - Incorrect start date format.
+2019-03-23 17:49:46 ERROR ViewAdd:148 - Incorrect end date format.
+2019-03-23 17:49:48 ERROR ViewAdd:164 - Incorrect data for the task.
+2019-03-23 17:49:51 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:50:29 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
+2019-03-23 17:50:31 ERROR View:124 - The task for removing did not choose.
+2019-03-23 17:51:20 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:51:22 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
+2019-03-23 17:51:25 ERROR View:124 - The task for removing did not choose.
+2019-03-23 17:51:34 ERROR View:124 - The task for removing did not choose.
+2019-03-23 17:51:50 ERROR View:124 - The task for removing did not choose.
+2019-03-23 17:51:52 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
+2019-03-23 17:52:09 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
+2019-03-23 17:52:11 ERROR View:124 - The task for removing did not choose.
+2019-03-23 17:52:13 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:52:30 ERROR View:124 - The task for removing did not choose.
+2019-03-23 17:52:32 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:55:56 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.
+2019-03-23 17:55:58 INFO  DetailView:44 - Window com.vlad.DetailView successfully created
+2019-03-23 17:56:04 ERROR View:124 - The task for removing did not choose.
+2019-03-23 17:56:35 ERROR LinkedTaskList:80 - Incorrect index less than 0 or more than number of tasks in the list.

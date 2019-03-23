@@ -1,3 +1,4 @@
+package com.vlad;
 
 import javax.swing.JPanel;
 import javax.swing.JFrame;
