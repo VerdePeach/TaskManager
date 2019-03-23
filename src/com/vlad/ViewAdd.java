@@ -33,7 +33,7 @@ public class ViewAdd extends JFrame {
      */
     ViewAdd(String str, LinkedTaskList linkedTaskList) {
         setBounds(900,400,300,300);
-        setTitle("Add Task");
+        setTitle("Add Task"); 
         setResizable(false);
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
